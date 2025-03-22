@@ -1,0 +1,67 @@
+/* Full Height Layout */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Sticky Header */
+  .dashboard-header {
+    position: sticky;
+    top: 0;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Scrollable Content */
+  .dashboard-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Task Section Styling */
+  .task-section {
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .task-section:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Form & Calendar Styling */
+  .task-form, .task-calendar {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-content {
+      padding: 15px;
+    }
+    
+    .task-section {
+      width: 100%;
+    }
+  }
+  
